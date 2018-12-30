@@ -76,17 +76,46 @@ h2 { font: 1.17em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; line-height:
 	text-align: left;
 }
 
+.smalltitle {
+  font-size: 17px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+  font-weight: 500;
+}
+
 /*
 .about p { margin-bottom: 0; }
 
 .about p + p { text-indent: 1.4em; margin-top: 0; }
 */
 
+
+div.playbutton {
+  margin-left: 15.4em;
+  width: 33em;
+  text-align:center;
+  vertical-align:center;
+  padding:1ex;
+}
+
+div.playbutton a {
+  font: 1.17em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; line-height: .25;
+  padding:1ex 2ex 1ex 2ex;
+  border:1px solid black;
+  border-radius:5px;
+  text-decoration:none;
+  background:#eee;
+  color:black;
+}
+
+div.playbutton a:hover { background:#b52; }
+div.playbutton a:active { background:#ccc; }
+
+
 /* Interpreter info */
 
 .playinfo {
 	margin: 1em 0px 0px 15.4em;
-	width: 33em;
+  width: 33em;
 }
 
 .playinfo p {
@@ -97,7 +126,7 @@ h2 { font: 1.17em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; line-height:
 /* Links */
 
 .links {
-	width: 13em;
+	width: 13.6em;
 	float: left;
 	clear: left;
 	text-align: right; 
@@ -109,6 +138,8 @@ h2 { font: 1.17em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; line-height:
   padding: 0;
 }
 
+.links li a { padding-top: 15px; display:inline-block; }
+
 span.filetype { font-size: .8em; display: none; }
 
 /* 
@@ -119,14 +150,17 @@ Source formatting applies to the source text on generated pages.
 {
 	margin-top: 1.4em;
 	margin-left: 15.4em;
-	width: 33em;
+	width: 60em;
 	line-height: 1.4;
 }
 
 .sourceintroduction
 {
+	padding-top: 2.4em;
 	margin-left: 15.4em;
-	width: 33em;
+	width: 60em;
+	line-height: 1;
+	text-align: left;
 }
 
 .sourceintroduction h1
@@ -134,10 +168,10 @@ Source formatting applies to the source text on generated pages.
 	padding-top: 2.8em;
 	/* font-size: 1em; */
 	line-height: 1;
-	text-align: right;
-	text-decoration: none;
-	font-weight: normal;
-	font-style: italic;
+	/* text-align: right; */
+	/* text-decoration: none; */
+	/* font-weight: normal; */
+	/* font-style: italic; */
 }
 
 .sourceintroduction h2
@@ -188,23 +222,41 @@ span.i6code { color: #666; font-family: monospace; }
 
 span.columnhead { 
 	font-style: italic; 
+  font-weight: bold;
 	/* font-size: 1em; */
 }
+
+.source .heading { font: 1.17em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; line-height: .25; }
 
 span.heading
 {
 	font-weight: bold;
 } 
 
+.source table {
+  padding-left: 2em; 
+  border-spacing: 0px;
+}
+
 .source td
 {
-	padding-top: .7em;
-	padding-bottom: .7em;
-	padding-right: 1.4em;
-	font-size: .75em;
+	padding-top: .4em;
+	padding-bottom: .4em;
+  padding-left: 1em;
+	padding-right: 2em; /* 1.4em */
+	font-size: .85em; /*.75*/
 	text-align: left;
 	vertical-align: top;
 } 
+
+.source td:last-child { padding-right: 1em; }
+
+.source tr:nth-child(even) {background-color: #f2f2f2;}
+
+h1 span.pagination {
+ font: 0.9em "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+ color: #999;
+}
 
 /*
 We could alter the following in order to make the footnote links in the source
@@ -237,7 +289,19 @@ Notes applies to footnotes on the source text.
 .notes
 {
 	margin-left: 16.8em;
-	width: 33em;
+	width: 58.6em;
+}
+
+.notes p:first-child {
+  border-top:1px solid black;
+  padding-top:1ex;
+  width:10em;
+  margin-left: -1.4em;
+}
+
+.notesheading {
+  display:none;
+  font-style: italic; 
 }
 
 .notes p
@@ -245,8 +309,6 @@ Notes applies to footnotes on the source text.
 	text-indent: -1.4em;
 	font-size: .75em;
 }
-
-.notesheading { font-style: italic; }
 
 p.indent0 
 {	margin-bottom: 0;  
@@ -339,6 +401,7 @@ Styles for play.html
 	bottom: 1em;
 	font-size: 80%;
 	position: fixed;
+  width: 18em;
 }
 
 #gameport
@@ -377,3 +440,4 @@ Styles for mobile browsers: change to a one-column layout.
 		width: auto;
 	}
 }
+
