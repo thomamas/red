@@ -808,7 +808,7 @@ Instead of kissing or tasting the wolf:
 	get eaten.
 		
 Instead of attacking the wolf:
-	say "You charge [the wolf] and punch hard as you can. He only smiles.[paragraph break]";
+	say "You charge [the wolf] and punch as hard as you can. He only smiles.[paragraph break]";
 	get eaten.
 
 Instead of cutting the wolf with the knife:
