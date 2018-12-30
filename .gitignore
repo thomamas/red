@@ -1,0 +1,13 @@
+.*.swp
+Red.materials/Icon*
+Red.materials/Release
+Red.materials/*.eps
+Red.inform/Build
+Red.inform/Index
+Red.inform/Metadata.iFiction
+Red.inform/Release.blurb
+Red.inform/Settings.plist
+Red.inform/Skein.skein 
+Red.inform/manifest.plist
+Red.inform/notes.rtf
+.DS_Store
